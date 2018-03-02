@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012-03-06 09:39:37.968.pas,D:\Documents and Settings\Administrator\My Documents\Borland Studio Projects\Unit1.pas=D:\Documents and Settings\Administrator\桌面\数据库升级\Source\uMain.pas</Transaction>
+    <Transaction>2012-03-06 09:39:37.968.dfm,D:\Documents and Settings\Administrator\My Documents\Borland Studio Projects\Unit1.dfm=D:\Documents and Settings\Administrator\桌面\数据库升级\Source\uMain.dfm</Transaction>
+    <Transaction>2012-03-06 09:39:59.000.bdsproj,D:\Documents and Settings\Administrator\My Documents\Borland Studio Projects\Project1.bdsproj=D:\Documents and Settings\Administrator\桌面\数据库升级\Source\DBUpgradeDemo.bdsproj</Transaction>
+    <Transaction>2012-03-06 09:40:20.203.pas,D:\Documents and Settings\Administrator\桌面\数据库升级\Source\Unit1.pas=D:\Documents and Settings\Administrator\桌面\数据库升级\Source\uDBUpgrade.pas</Transaction>
+    <Transaction>2012-03-06 14:47:55.375.pas,D:\Documents and Settings\Administrator\桌面\数据库升级\Source\Unit1.pas=D:\Documents and Settings\Administrator\桌面\数据库升级\Source\uDBUpgradeConst.pas</Transaction>
+    <Transaction>2012-03-12 16:42:07.843.pas,E:\姚新\畅想自动化\软件项目\数据库升级\Source\uDBUpgrade.pas=E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能单元\uDBUpgrade.pas</Transaction>
+    <Transaction>2012-03-12 16:42:15.265.pas,E:\姚新\畅想自动化\软件项目\数据库升级\Source\uDBUpgradeConst.pas=E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能单元\uDBUpgradeConst.pas</Transaction>
+    <Transaction>2012-03-12 16:43:58.796.pas,E:\姚新\畅想自动化\软件项目\数据库升级\Source\Unit1.pas=E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能窗体\uFrmSourceDB.pas</Transaction>
+    <Transaction>2012-03-12 16:43:58.796.dfm,E:\姚新\畅想自动化\软件项目\数据库升级\Source\Unit1.dfm=E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能窗体\uFrmSourceDB.dfm</Transaction>
+    <Transaction>2012-03-12 16:45:06.906.pas,E:\姚新\畅想自动化\软件项目\数据库升级\Source\Unit1.pas=E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能窗体\uFrmCompareSet.pas</Transaction>
+    <Transaction>2012-03-12 16:45:06.906.dfm,E:\姚新\畅想自动化\软件项目\数据库升级\Source\Unit1.dfm=E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能窗体\uFrmCompareSet.dfm</Transaction>
+    <Transaction>2012-03-12 17:05:22.562.pas,E:\姚新\畅想自动化\软件项目\数据库升级\Source\Unit1.pas=E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能单元\uDataDefine.pas</Transaction>
+    <Transaction>2012-03-20 13:39:40.562.pas,E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能单元\uDataDefine.pas=</Transaction>
+    <Transaction>2012-03-20 13:39:41.484.pas,E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能单元\uDBUpgrade.pas=</Transaction>
+    <Transaction>2012-03-20 13:39:42.484.pas,E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能单元\uDBUpgradeConst.pas=</Transaction>
+    <Transaction>2012-11-13 17:04:31.656.pas,E:\姚新\畅想自动化\软件项目\数据库升级\Source\Unit1.pas=E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能窗体\uFrmConfigAdd.pas</Transaction>
+    <Transaction>2012-11-13 17:04:31.656.dfm,E:\姚新\畅想自动化\软件项目\数据库升级\Source\Unit1.dfm=E:\姚新\畅想自动化\软件项目\数据库升级\Source\功能窗体\uFrmConfigAdd.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

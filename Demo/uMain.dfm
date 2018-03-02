@@ -1,0 +1,1555 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  BorderWidth = 5
+  Caption = #25968#25454#24211#33258#21160#21319#32423
+  ClientHeight = 724
+  ClientWidth = 1078
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = #23435#20307
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 177
+    Top = 52
+    Width = 901
+    Height = 672
+    ActivePage = TabSheet2
+    Align = alClient
+    TabOrder = 0
+    object TabSheet2: TTabSheet
+      Caption = #21453#23556#25968#25454#24211
+      object RzPageControl1: TRzPageControl
+        Left = 0
+        Top = 0
+        Width = 893
+        Height = 611
+        ActivePage = TabSheet10
+        ActivePageDefault = TabSheet10
+        Align = alClient
+        UseColoredTabs = True
+        FlatColor = clGray
+        ShowShadow = False
+        TabIndex = 0
+        TabOrder = 0
+        TabOrientation = toBottom
+        TabStyle = tsDoubleSlant
+        UseGradients = False
+        FixedDimension = 19
+        object TabSheet10: TRzTabSheet
+          Caption = #34920
+          object AdvSplitter1: TAdvSplitter
+            Left = 0
+            Top = 200
+            Width = 891
+            Height = 10
+            Cursor = crVSplit
+            Align = alTop
+            ResizeStyle = rsUpdate
+            Appearance.BorderColor = clNone
+            Appearance.BorderColorHot = clNone
+            Appearance.Color = clWhite
+            Appearance.ColorTo = clSilver
+            Appearance.ColorHot = clWhite
+            Appearance.ColorHotTo = clGray
+            GripStyle = sgDots
+            ExplicitWidth = 1086
+          end
+          object lvTable: TListView
+            Left = 0
+            Top = 0
+            Width = 891
+            Height = 200
+            Align = alTop
+            BevelInner = bvNone
+            BorderStyle = bsNone
+            Columns = <
+              item
+                Caption = #34920#21517#31216
+                Width = 200
+              end
+              item
+                AutoSize = True
+                Caption = #34920#25551#36848
+              end>
+            Ctl3D = False
+            GridLines = True
+            ReadOnly = True
+            RowSelect = True
+            SmallImages = PngImageList1
+            TabOrder = 0
+            ViewStyle = vsReport
+            OnChange = lvTableChange
+            OnClick = lvTableClick
+          end
+          object lvColumn: TListView
+            Left = 0
+            Top = 210
+            Width = 891
+            Height = 380
+            Align = alClient
+            BevelInner = bvNone
+            BevelOuter = bvNone
+            Columns = <
+              item
+                Caption = #21015#21517#31216
+                Width = 200
+              end
+              item
+                Caption = #31867#22411
+                Width = 80
+              end
+              item
+                Caption = #38271#24230
+                Width = 80
+              end
+              item
+                Caption = #20801#35768#20026#31354
+                Width = 80
+              end
+              item
+                Caption = #32570#30465#20540
+                Width = 150
+              end
+              item
+                Caption = #20027#38190
+                Width = 80
+              end
+              item
+                Caption = #26631#35782
+              end
+              item
+                AutoSize = True
+                Caption = #25551#36848
+              end>
+            Ctl3D = False
+            GridLines = True
+            ReadOnly = True
+            RowSelect = True
+            SmallImages = PngImageList1
+            TabOrder = 1
+            ViewStyle = vsReport
+          end
+        end
+        object TabSheet11: TRzTabSheet
+          Caption = #35270#22270
+          object AdvSplitter2: TAdvSplitter
+            Left = 0
+            Top = 200
+            Width = 891
+            Height = 10
+            Cursor = crVSplit
+            Align = alTop
+            ResizeStyle = rsUpdate
+            Appearance.BorderColor = clNone
+            Appearance.BorderColorHot = clNone
+            Appearance.Color = clWhite
+            Appearance.ColorTo = clSilver
+            Appearance.ColorHot = clWhite
+            Appearance.ColorHotTo = clGray
+            GripStyle = sgDots
+            ExplicitWidth = 1086
+          end
+          object lvView: TListView
+            Left = 0
+            Top = 0
+            Width = 891
+            Height = 200
+            Align = alTop
+            BorderStyle = bsNone
+            Columns = <
+              item
+                Caption = #21517#31216
+                Width = 200
+              end
+              item
+                AutoSize = True
+                Caption = #25551#36848
+              end>
+            Ctl3D = False
+            GridLines = True
+            ReadOnly = True
+            RowSelect = True
+            SmallImages = PngImageList1
+            TabOrder = 0
+            ViewStyle = vsReport
+            OnClick = lvViewClick
+          end
+          object memoViewContent: TMemo
+            Left = 0
+            Top = 210
+            Width = 891
+            Height = 380
+            Align = alClient
+            BorderStyle = bsNone
+            Ctl3D = False
+            ParentCtl3D = False
+            ReadOnly = True
+            TabOrder = 1
+          end
+        end
+        object TabSheet12: TRzTabSheet
+          Caption = #35302#21457#22120
+          object AdvSplitter3: TAdvSplitter
+            Left = 0
+            Top = 200
+            Width = 891
+            Height = 10
+            Cursor = crVSplit
+            Align = alTop
+            ResizeStyle = rsUpdate
+            Appearance.BorderColor = clNone
+            Appearance.BorderColorHot = clNone
+            Appearance.Color = clWhite
+            Appearance.ColorTo = clSilver
+            Appearance.ColorHot = clWhite
+            Appearance.ColorHotTo = clGray
+            GripStyle = sgDots
+            ExplicitWidth = 1086
+          end
+          object lvTrigger: TListView
+            Left = 0
+            Top = 0
+            Width = 891
+            Height = 200
+            Align = alTop
+            BorderStyle = bsNone
+            Columns = <
+              item
+                Caption = #21517#31216
+                Width = 200
+              end
+              item
+                AutoSize = True
+                Caption = #25551#36848
+              end>
+            Ctl3D = False
+            GridLines = True
+            ReadOnly = True
+            RowSelect = True
+            SmallImages = PngImageList1
+            TabOrder = 0
+            ViewStyle = vsReport
+            OnClick = lvTriggerClick
+          end
+          object memoTriggerContent: TMemo
+            Left = 0
+            Top = 210
+            Width = 891
+            Height = 380
+            Align = alClient
+            BorderStyle = bsNone
+            Ctl3D = False
+            ParentCtl3D = False
+            ReadOnly = True
+            TabOrder = 1
+          end
+        end
+        object TabSheet13: TRzTabSheet
+          Caption = #23384#20648#36807#31243
+          object AdvSplitter4: TAdvSplitter
+            Left = 0
+            Top = 200
+            Width = 891
+            Height = 10
+            Cursor = crVSplit
+            Align = alTop
+            ResizeStyle = rsUpdate
+            Appearance.BorderColor = clNone
+            Appearance.BorderColorHot = clNone
+            Appearance.Color = clWhite
+            Appearance.ColorTo = clSilver
+            Appearance.ColorHot = clWhite
+            Appearance.ColorHotTo = clGray
+            GripStyle = sgDots
+            ExplicitWidth = 1086
+          end
+          object lvProcedure: TListView
+            Left = 0
+            Top = 0
+            Width = 891
+            Height = 200
+            Align = alTop
+            BorderStyle = bsNone
+            Columns = <
+              item
+                Caption = #21517#31216
+                Width = 200
+              end
+              item
+                AutoSize = True
+                Caption = #25551#36848
+              end>
+            Ctl3D = False
+            GridLines = True
+            ReadOnly = True
+            RowSelect = True
+            SmallImages = PngImageList1
+            TabOrder = 0
+            ViewStyle = vsReport
+            OnClick = lvProcedureClick
+          end
+          object memoProcedureContent: TMemo
+            Left = 0
+            Top = 210
+            Width = 891
+            Height = 380
+            Align = alClient
+            BorderStyle = bsNone
+            Ctl3D = False
+            ParentCtl3D = False
+            ReadOnly = True
+            TabOrder = 1
+          end
+        end
+        object TabSheet14: TRzTabSheet
+          Caption = #20989#25968
+          object AdvSplitter5: TAdvSplitter
+            Left = 0
+            Top = 200
+            Width = 891
+            Height = 10
+            Cursor = crVSplit
+            Align = alTop
+            ResizeStyle = rsUpdate
+            Appearance.BorderColor = clNone
+            Appearance.BorderColorHot = clNone
+            Appearance.Color = clWhite
+            Appearance.ColorTo = clSilver
+            Appearance.ColorHot = clWhite
+            Appearance.ColorHotTo = clGray
+            GripStyle = sgDots
+            ExplicitWidth = 1086
+          end
+          object lvFunction: TListView
+            Left = 0
+            Top = 0
+            Width = 891
+            Height = 200
+            Align = alTop
+            BorderStyle = bsNone
+            Columns = <
+              item
+                Caption = #21517#31216
+                Width = 200
+              end
+              item
+                AutoSize = True
+                Caption = #25551#36848
+              end>
+            Ctl3D = False
+            GridLines = True
+            ReadOnly = True
+            RowSelect = True
+            SmallImages = PngImageList1
+            TabOrder = 0
+            ViewStyle = vsReport
+            OnClick = lvFunctionClick
+          end
+          object memoFunctionContent: TMemo
+            Left = 0
+            Top = 210
+            Width = 891
+            Height = 380
+            Align = alClient
+            BorderStyle = bsNone
+            Ctl3D = False
+            ParentCtl3D = False
+            ReadOnly = True
+            TabOrder = 1
+          end
+        end
+        object TabSheet15: TRzTabSheet
+          Caption = #22806#38190
+          object lvForeignkey: TListView
+            Left = 0
+            Top = 0
+            Width = 891
+            Height = 590
+            Align = alClient
+            BorderStyle = bsNone
+            Columns = <
+              item
+                Caption = #22806#38190#34920
+                Width = 200
+              end
+              item
+                AutoSize = True
+                Caption = #22806#38190#21015
+              end
+              item
+                Caption = #22806#38190#24341#29992#34920
+                Width = 200
+              end
+              item
+                Caption = #22806#38190#24341#29992#21015
+                Width = 200
+              end>
+            Ctl3D = False
+            GridLines = True
+            ReadOnly = True
+            RowSelect = True
+            SmallImages = PngImageList1
+            TabOrder = 0
+            ViewStyle = vsReport
+            OnClick = lvFunctionClick
+          end
+        end
+        object TabSheet1: TRzTabSheet
+          Caption = #32034#24341
+          object AdvSplitter6: TAdvSplitter
+            Left = 0
+            Top = 200
+            Width = 891
+            Height = 10
+            Cursor = crVSplit
+            Align = alTop
+            ResizeStyle = rsUpdate
+            Appearance.BorderColor = clNone
+            Appearance.BorderColorHot = clNone
+            Appearance.Color = clWhite
+            Appearance.ColorTo = clSilver
+            Appearance.ColorHot = clWhite
+            Appearance.ColorHotTo = clGray
+            GripStyle = sgDots
+            ExplicitLeft = 3
+            ExplicitTop = 58
+            ExplicitWidth = 1076
+          end
+          object lvIndexColumn: TListView
+            Left = 0
+            Top = 210
+            Width = 891
+            Height = 380
+            Align = alClient
+            BevelInner = bvNone
+            BevelOuter = bvNone
+            Columns = <
+              item
+                Caption = #21015#21517#31216
+                Width = 200
+              end
+              item
+                Caption = #39034#24207
+                Width = 80
+              end>
+            Ctl3D = False
+            GridLines = True
+            ReadOnly = True
+            RowSelect = True
+            SmallImages = PngImageList1
+            TabOrder = 0
+            ViewStyle = vsReport
+          end
+          object lvIndex: TListView
+            Left = 0
+            Top = 0
+            Width = 891
+            Height = 200
+            Align = alTop
+            BevelInner = bvNone
+            BorderStyle = bsNone
+            Columns = <
+              item
+                Caption = #32034#24341#21517#31216
+                Width = 200
+              end
+              item
+                Caption = #25152#23646#34920
+                Width = 200
+              end
+              item
+                Caption = #32858#31751#32034#24341
+                Width = 80
+              end
+              item
+                Caption = #21807#19968#32034#24341
+                Width = 80
+              end
+              item
+                Caption = #20027#38190#32034#24341
+                Width = 80
+              end
+              item
+                Caption = #32422#26463#32034#24341
+                Width = 80
+              end>
+            Ctl3D = False
+            GridLines = True
+            ReadOnly = True
+            RowSelect = True
+            SmallImages = PngImageList1
+            TabOrder = 1
+            ViewStyle = vsReport
+            OnClick = lvIndexClick
+          end
+        end
+      end
+      object Panel1: TPanel
+        Left = 0
+        Top = 611
+        Width = 893
+        Height = 33
+        Align = alBottom
+        BevelOuter = bvNone
+        TabOrder = 1
+        DesignSize = (
+          893
+          33)
+        object Button1: TButton
+          Left = 814
+          Top = 2
+          Width = 75
+          Height = 25
+          Anchors = [akTop, akRight]
+          Caption = #20445#23384
+          TabOrder = 0
+          OnClick = Button1Click
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = #26356#26032#25968#25454#24211
+      ImageIndex = 1
+      object Panel2: TPanel
+        Left = 0
+        Top = 611
+        Width = 893
+        Height = 33
+        Align = alBottom
+        BevelOuter = bvNone
+        TabOrder = 0
+        DesignSize = (
+          893
+          33)
+        object Button2: TButton
+          Left = 795
+          Top = 6
+          Width = 75
+          Height = 25
+          Anchors = [akTop, akRight]
+          Caption = #26356#26032
+          TabOrder = 0
+          OnClick = Button2Click
+        end
+      end
+      object Panel3: TPanel
+        Left = 0
+        Top = 0
+        Width = 893
+        Height = 611
+        Align = alClient
+        BevelOuter = bvNone
+        BorderWidth = 10
+        TabOrder = 1
+        object GroupBox1: TGroupBox
+          Left = 342
+          Top = 10
+          Width = 541
+          Height = 591
+          Align = alClient
+          Caption = #26356#26032#35760#24405
+          TabOrder = 0
+          object Panel6: TPanel
+            Left = 2
+            Top = 15
+            Width = 537
+            Height = 574
+            Align = alClient
+            BevelOuter = bvNone
+            BorderWidth = 10
+            TabOrder = 0
+            object Memo1: TMemo
+              Left = 10
+              Top = 26
+              Width = 517
+              Height = 538
+              Align = alClient
+              ReadOnly = True
+              TabOrder = 0
+            end
+            object Panel7: TPanel
+              Left = 10
+              Top = 10
+              Width = 517
+              Height = 16
+              Align = alTop
+              BevelOuter = bvNone
+              TabOrder = 1
+            end
+          end
+        end
+        object GroupBox2: TGroupBox
+          Left = 10
+          Top = 10
+          Width = 300
+          Height = 591
+          Align = alLeft
+          Caption = #28304#25968#25454#24211
+          TabOrder = 1
+          object Panel9: TPanel
+            Left = 2
+            Top = 15
+            Width = 296
+            Height = 574
+            Align = alClient
+            BevelOuter = bvNone
+            BorderWidth = 10
+            TabOrder = 0
+            object tvCompare: TTreeView
+              Left = 10
+              Top = 10
+              Width = 276
+              Height = 554
+              Align = alClient
+              Ctl3D = True
+              HideSelection = False
+              Images = ImgLstTree
+              Indent = 19
+              ParentCtl3D = False
+              RowSelect = True
+              TabOrder = 0
+            end
+          end
+        end
+        object Panel4: TPanel
+          Left = 310
+          Top = 10
+          Width = 16
+          Height = 591
+          Align = alLeft
+          BevelOuter = bvNone
+          TabOrder = 2
+        end
+        object Panel5: TPanel
+          Left = 326
+          Top = 10
+          Width = 16
+          Height = 591
+          Align = alLeft
+          BevelOuter = bvNone
+          TabOrder = 3
+        end
+      end
+    end
+  end
+  object treeConfigHistory: TTreeView
+    Left = 0
+    Top = 52
+    Width = 177
+    Height = 672
+    Align = alLeft
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = #23435#20307
+    Font.Style = []
+    HideSelection = False
+    Indent = 19
+    ParentFont = False
+    PopupMenu = PopupMenu1
+    ReadOnly = True
+    RightClickSelect = True
+    RowSelect = True
+    TabOrder = 1
+    OnKeyDown = treeConfigHistoryKeyDown
+  end
+  object RzPanel1: TRzPanel
+    Left = 0
+    Top = 0
+    Width = 1078
+    Height = 52
+    Align = alTop
+    BorderOuter = fsGroove
+    TabOrder = 2
+    DesignSize = (
+      1078
+      52)
+    object BtnConfigAdd: TPngSpeedButton
+      Left = 11
+      Top = 11
+      Width = 100
+      Height = 29
+      Caption = #28155#21152#37197#32622
+      OnClick = BtnConfigAddClick
+      PngImage.Data = {
+        89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+        610000001974455874536F6674776172650041646F626520496D616765526561
+        647971C9653C0000032A4944415478DA65536D489351147EEEF6CE7266996D66
+        2D9DDB92A4405343C542167D58F4410545ACB0B01F122159496636E767656518
+        F4413F8C928A28F48741A50581A5535152D152AAA591AEA6C96843B1B9BD9DFB
+        6A2674E072EF3D1FCF39CFB9E7B2B2CBE5E02293C9A4DDEBF5C2CFCF0F3E9F4F
+        2401638CDB18D7FF15B2CD9C19079876ACE5F164DC3D6D130FA7A5E16E5595E4
+        C71390DF4FF27B43FB2E0E3C034041B551512B76F02C3D3DEF47C8A852AB5488
+        D0EBD16FB361786484078BAB56AD6472B91CBDBD7D4F0970A70470F1D2158C8D
+        8DD5EBF5FA4D89090992B3561B4EBA71D887EC08095123707E20060606A056A9
+        D1D2DA0A9BCDF652A9546E96000A8B4B6131E719CC96A236CA10A4D168E076B9
+        FFD29AE13A2F701E060707A9C21E6771A1650DC57D96008A4ACE4BCE1E8F473C
+        78C08481AFDFA4267DE8ED85483BE7AED369E1EF1F006D7818EE3F7800A221F5
+        842760054525E2E4E42495AA4272F23AB87EB9D0D1D981FEFE2F352DCDCDF712
+        93920EE974FA3DABA36389CA7C3436BD85E3870382420119933166B6148AE9E9
+        E99898988063D8C195B05AAD78595F97525FF7A23535756B42EA966D0D6B938C
+        F42E72A816A9A15008A8BC53094110A600A87C2A538798E81889AFB5D90ABBDD
+        5E29088AF33EAFEFAC561375C4155603EBF76A0201510016BB92E10A6992BA14
+        CF83B24F9F6933994CE0749C4E27BABBBBE9EC8572CE0238821E6134A01E31CB
+        8124CD29B40E95A3FB1330EAC40D76F65CBED4B4DF9EDFBEF529EBD9B2300D65
+        11F9E4400639FC640B9067D560432C3041C3989528A2A285C15F001A3BE91572
+        F3CC7C7C7F464646061B8D46F4F5F5C1603048232D8A0C73650B91D31082DCED
+        D958B3F4F2CCB3B60F9D41C5F332B09CDC3CB8DDEED7717171461ED4D5D5E5A4
+        E7090A0D0D8569BF098F1F3EC3BB251988D703E31EC0BC5144F12B06A502E8B2
+        610AA0EC42A9E1E8B1CC3B94D277EBE6F52C4A20641E3FD1967FCE829282ABB0
+        698A6E2F8B4046980A4889CC41C3C7327C1B018687502D01702190E5FC03D1FD
+        336F24FF8DFCD309BE40945FCB5FBAF70A2AFC83B18FDA03DEFAF151543FC9C6
+        C97FB3FABFC4CF3AB7D30AA7A59EA51BA6F5F50F550565012919FB2500000000
+        49454E44AE426082}
+    end
+    object BtnConfigEdit: TPngSpeedButton
+      Left = 114
+      Top = 11
+      Width = 100
+      Height = 29
+      Caption = #20462#25913#37197#32622
+      OnClick = BtnConfigEditClick
+      PngImage.Data = {
+        89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+        610000001974455874536F6674776172650041646F626520496D616765526561
+        647971C9653C0000033E4944415478DA7553594C5341143D53A15AA54AB4D598
+        22D8169440620356A84411504C4DDC4DFCC035553FD428261A4416918AB2B8C5
+        25901845543E0D31B844704B34B1685A1605292A95D51A0BC85296F2DA3E679E
+        D0F8E3FD99C9DC73CEDC7BE70C29BC70092C442291B07A3C1E88C56278BD5E9E
+        0608212C47D8F964D09C6F4F98C004B092F16972CB448EDFBB7B37CAEEDD1370
+        EC028AEBA5B8B774DDCC847D029454191EBE7803BBA5A9E9730F4DCAE4321916
+        AA5468B3D9E0E8E961643E32328288A68860B5B63CA2821B291DA4A0E8224646
+        46AA552A55726C4C8C000E0909A667A3B0FFB063EE5C39A433A5686F6F875C26
+        C7BB0F35F8D2FAB54A3263BA9E554172CF9E434E76A63A3BC768A637042A140A
+        38879C936DF97A0D9006A0ABBB1BF58D0D8E42E359DD97A2B736577F2F8831EF
+        BC00E6388EDFB92305ED1D5DC2909AAD56F07465BD2B9521904802101CAC4069
+        F95DEC97AE831B1CC606FA083963CCE3DD6E372D5586B8B815181A1C427D433D
+        DADABE57BCAFA9B91BABD3ED51AAD45BA3345190CE92A2A2B2020734067477FD
+        C4347B2748764E2E6F3018E072B9F0CBF10B222282C964C2F3EAAAF8EAAA671F
+        D6EAD7C524EBD7BF591EB7124F9E3CC6E183076815A5D0F64541F6DBF6578096
+        4FCB5442B34423F46BAA31C16EB7DFF6F3F73FCF7990312F28745F5297116A43
+        11AE3CE8842E5683A72F9FE25A5EA1964D6929239D484B37A7A4A480B5D33F30
+        80C6C646701E6AA2698148B217217ABD1CE8B0A1C5DF809BEFDDB89C9FAB6D3A
+        5466211959A785A18D73E3DEC4F84412B440015E700E75A3BF149EFB6BB16C93
+        02E8FC01F4FF4479ED7CEC2AFEA44DCBCCB278087DA95399D9CCBEBD616161B3
+        131212606D69814ABD08E3BC1863B75641B77501D0ED00061D283507815B9E85
+        D6E6BA0AEAA76D82134F9ECA84D3E97C1D1D1D9DC09CD8F0F153BF1B7E8157D7
+        583055AB07FA46E850AEA1AC4E89D1D80C4C850BF575E657D32592D53E81C2FC
+        73EA83878F945243784B8A6F1CA3E77EE5F93BCD7394A1D02F99853B37EEC350
+        5CAB3D7A3CFD05373ADC50527C7D3FE57DF309B0A022A1EC03A5659C6E950E37
+        83F34EE1C5E383D81E21C6A2D487DAD4F45CCBD5821CF64C4ECA69F5FD46FC3F
+        96FEB3B7FC0FF40798867C77C8C305870000000049454E44AE426082}
+    end
+    object BtnConfigDelete: TPngSpeedButton
+      Left = 218
+      Top = 11
+      Width = 100
+      Height = 29
+      Caption = #21024#38500#37197#32622
+      OnClick = BtnConfigDeleteClick
+      PngImage.Data = {
+        89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+        610000001974455874536F6674776172650041646F626520496D616765526561
+        647971C9653C0000032A4944415478DA65536B489351187ECEF66DE5DABAB1A9
+        64A9DB922E42B3152A626A44572ABA40D88A2EF62322A40BD1459DA6596937FA
+        D1F54792927F022B8AA034082A9999518A2E0D5C2E9ACBB41AB92CDDBEEFEB3D
+        9F6642EFC7CB39DF79DFF739EFE539ACFCEC797051A954CA2A8A22B45A2D2449
+        9249C018E336C6CFFF0AD946F78C038C38DEE7F1645C3F6293776CDB869B5555
+        8A1FBF80FCBE92DF735AD771E051000ABA3F7BF6AC35FC96B636771F198D26A3
+        11F1160BBA3C1EF4F6F5F1603931712E53ABD5686FEF7840806B1580B233E730
+        3030506BB15896A624272BCE7171B174F60BFE6E3F22234D304C34C0EBF5C264
+        34E16563233C1E4F9D4EA75BA600149F38892267BED55954D244374C8E898941
+        B03FF8B7ACD15AF5063D7C3E1F65D81638515CB490E23A158092D2538A732814
+        92B76E71C0FBF193D2A477EDED9069E5B59BCD7188889880B8D819B8555D0D2A
+        43E909BF801D2F2995C3E130A56A445A5A3AFA7FF4E36DF35B74757DB8F3B2A1
+        A132253575BBD96CD960B3CD87619201F5F52FD0D3D30B8D4650A6C39C45C572
+        4E4E0E060707F1A5F70B544C0597CB85BADAC719B58F1F352E5BB13279E98A55
+        CF52D21741241B75171A4140C58D0AA805611880D2A734CDB0CDB329F5BA1A5C
+        F0FBFD370441732A2C4B7951F1965D99BE56B027772153DA02A5EFB6DA61EF76
+        2B5D5AC0830E1D3EDAE47038C0CB090402686D6D45282C42A3D723E97D23ACBE
+        7788B525016A0D31290CAFDB8DEFDF0297595E41A1D2B4A1D090B43863319B3E
+        2386282473E6707A421AAF03DBB904496929742C516345101948B5686A76831D
+        CB7772FA7E4D4848989A9595858E8E0E58AD5685D29CB0924E0F716B26EC05A5
+        C0F2ECD1B1A2EE365E5D28033B722C1FC160F0A9DD6ECFE2412D2D2D011ACFE4
+        E8E868646FDE8CCA9A7BD8F8F02A122D519479189248A355D308351A3477F70F
+        03949F3E69DDB337B782E778F5CAA5FD842FE4EE3BD0E42C2C44DEE972AC76DD
+        B93E2772CAEE783DCD1D327D0C9E9F40E78FDF350A00170299C91F10FD77F246
+        F2D728CAC090761CAE95954E7BB8C476314A17B149E6EC23FDFC7BB06675DD9B
+        83FFB8FABF2C18B37F4D1A4B6A1A73D64BFAF10F92756AC29CEDAB1300000000
+        49454E44AE426082}
+    end
+    object btnReverse: TPngSpeedButton
+      Left = 793
+      Top = 4
+      Width = 137
+      Height = 43
+      Anchors = [akTop, akRight]
+      Caption = #21453#23556#25968#25454#24211
+      OnClick = btnReverseClick
+      PngImage.Data = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F40000001974455874536F6674776172650041646F626520496D616765526561
+        647971C9653C000008144944415478DAAD977950545716877FAFF7B641417619
+        219A714988A22821011525680B8A919098C4FC61B9B5A8A8E38E02360888A099
+        49A14605E394269514CC306A196514011515C75DA22924D10197511689D03434
+        BDBD39F775C78CB18DCDCCDCAA53AFDF7DEF9DF3DDB3DDDB1C5E32E62F48EC13
+        18F8CA16FA19C3F3FCEF78FB3CC784E3EED3A5B4A1A17E75E1EE5D6D2FD3E568
+        70BFF14CBC316BD3E74AB942336AD448BC193A0A2A17D7675ED077E870E1E265
+        5CBE72155D0643E186D4F50B69DAF2FF009092F186D7870EF14B4878CF294525
+        257FC3F7B5B71E114400DD9AFE170069FAC6ACBB212346F8C6C54D11266E3434
+        E3CF153771A2A601228E23D7D324C5223A3800B327BC81D7023C85F70E1F3E8A
+        2BD7AE3E4ADF90EA34C4AF01C42969DA82E16F04CD9931E3036142FBCD19DC69
+        D22121E27504BFDA0FBA6E1E3AA315BA2E136AEF35E168F575C48DE88F2571A1
+        C2FBC5C57F41CD8D9B7BB3333334CE84E31980F113A27C264D9AFC68CDAAE510
+        4BC4F8F4F06534B519B132FE2D3C2183ED062B3A4C16741240A7C58A2E33D0AA
+        37E148E53F30618837D62584C262B6226FEB1F71FCF8DF7D4F565634F6044092
+        BC2E75CFB8B16366C54C9E88EBF5CDC82FAB45CE2763C98811EDCC2819EF32F3
+        36B1F0E82463ED46A0A5C3846B17AF62EB4721080AF44269E9719CAE3AB36F73
+        4ED63CD26B7616C0657D8AB62E69F1023F5FAFBE4829A941F890FE18E4EF8EB6
+        6E3319E761B09258D815C2B593407EEAB680E7393C7AD8024F533BD2E387E161
+        732BB6EFD8FD705376C660D2DBE12C40DF9454EDE38C8C344A1F03D4F9175138
+        37028F3B4D82DB99D16E26947C461276AF23280BCF0B19D94D13E7CE7C876F97
+        84C22A9143ABCD44765686073D6C7516C03B797D6A236530384B37E2F77C8FEC
+        F783F1C4406EA7780B86E97596DA462A0303AD5AC83002B0D20F3379A4EAD44D
+        14CF0982552C035512366FCAF2A1379A9C0658BB2EA5519B9602CE6CC0C75FDF
+        C54AF5EF05F7B39533A36612938883512482484C42BFADB47A0B79C864E65075
+        F2077C3933803CA0404666367273B27B0E408D04BCA90BB30FB66076982FF4B4
+        3223C4303100115DC51CC43211E47211C452F20285C1C82A834AA2BAFA1EBE98
+        EE459D44096A643D0758B53AF9BB059A79DEDE1E7DB0FB4A17DC5C5550C8A5B4
+        6A15CCB462A388742B4073808C442225D71B293F28111FDCEF8042A7C7821025
+        1A1FB761D7EEC2A64FB7E60EEB0940DFC4C4A43D51EF8C8F8F8E8AC4ED5613BE
+        AC936190A72BCACFF745EB133DECF986C14326236A6229858087D96C81DE6046
+        4D8D0E73869A31A0AF1465E527517EA2BCA4B06097A62749E8E2E7E7173477AE
+        E6FCE2450B2025E525F54AD4EADC71B99AC39EA46258281CE408CCCDFF107313
+        29F928FB4C2633EA7E3420D8D58098000BA85D203F7F077273370D279D7748F4
+        CE0248487CE66B12B78F0A1935FDFDF7E2A91ACCA868F6C1670738E4CFDF89BD
+        971662CEE89D585EB0103367F1E8D05BD1D86241B04B07D47E1DE0A9FC8A8AFF
+        0AB95289B1E3C6DC7F6DF0E041A4D3E02C001B6CBF1DB07C69CAD111C347FA4F
+        8B8B838C9341BD8BC3A659193878538BE941E9D8B02F1DEFC4F278857260A48B
+        01BE4A3D2CE4B143870FA3BEBE1E53E3A65292CA515E71126B562EA36CA13C76
+        1240CCBC303E0717A9C9F53353D153D243426E5FFFF11254DCDE8609039390F3
+        F5766147A4C628F4D9E8A113E1D734130D0FEEE0CDB050A854BD10111E4EDBF3
+        8FA8ACBA80B57F98F7420847DBB167741E9A776A0E506D9BC9B8049A1DF1881A
+        C79A8DD0771011B80836D35670622BB28BF66292E133F41FE803B94202894C86
+        C8B19174ED85B61FBEC2BF2A0B11BEB2DA21842300EFE8CD68CC9B55802F2E6A
+        3027B4002B0A355047D3DECA00ACCCAC500CC208F14FC09F4A4AA0366EFBA79B
+        9772809C6A54A6508093AA101B190C37199DDA6E25E34C15307645E573108E01
+        72D0A8FD2413076EA451CC33B1617F1A62D536E3FF3918C450AF686C2B3981F2
+        3598B2766DDA918001819028FA6098BC066FCBBE02228B6C4DE3D60A82B03E07
+        C10024B1793848BAA758AD3617536343F2474B50C962FEEA128AF9363A09D93E
+        60573A2A500FF84543A70E674F6582C5A5F7AAE4F4AA3101AD98D6EB0038A5CA
+        964091FB0942EA1082A9759D9C87F6D51F2EA2A66215A6785E84B30D3B9EAE34
+        2270B1106F703C1917614BD1E738B61631B01DBB5832B4903C2251B22A3AB431
+        FA74885B2D3C7AABA0544A6C051EB9CF0EB15280D0192CE1B1EB4F9D67005EEA
+        5C342525CCC0A507C54FDDC2FDCAD53FC77CB4FF0C6C2F29660043E9F627FB23
+        56EB5DCC412C840CA27863DCE930B71A78F75640F11462BFAD8FD7ADC6857366
+        84259529991DEF983C346A12D4B8D57C4C30CCCA8B259CA09A26C4629BEBD9ED
+        102F350A4A8EA1740D5EB4D1C87E8198767AA0EA21823CDAED10A424EA1B3AE5
+        2E45F51509C2979579080053B7E0361975E1EDCBA4EE8A59D347E3DE934BE8EF
+        361AFB0E5E8254620F397D61D2E36C5906E2E9B6F905FDE5198830B7EBF0EAAD
+        84B2172991D323F77E387BD58431CB8EF9300037F62289BBDDF352F56694CE98
+        1288167D033C5581283ED28063C9CFC5FC2E890E2F1E4F218A08E26DB76BF075
+        5340AAA2699512E7EA3C11B1B45400A0CC80CAFE011BEE31B9A87D37C615FA6E
+        1D5472571C2AD5A1D471CC7FF3C0F90C447ADC693A44B114A744B1E203EDD1B7
+        68BECE611FA0B26C7C77AA2D0F58FC0F7D0B1C7D71CC5F367E86F02771B1CFB1
+        83EA03A6CF1180D7442D0E50238B6039E164CC9D8150D9BD0D7B28D9366D7404
+        C07644F6D78AFDDF92F420E6FFD57004C08CB286A2B03FEF49CC7B3CFE0DEA51
+        64AC50CC56D30000000049454E44AE426082}
+    end
+    object btnCompare: TPngSpeedButton
+      Left = 936
+      Top = 4
+      Width = 137
+      Height = 43
+      Anchors = [akTop, akRight]
+      Caption = #27604#23545#26356#26032
+      OnClick = btnCompareClick
+      PngImage.Data = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F40000001974455874536F6674776172650041646F626520496D616765526561
+        647971C9653C000006464944415478DA9D977950D34714C7DF2FBF002AA88080
+        A88868550A52AD08232288122D44059CD68BD2CED8D3E94CA77FD93223A240B0
+        1D3AEDF48FDA765ADB4EA7F5AA27680BA21C16112F2C05E4101A90235C21C120
+        01428E5FDF6E7EA4219004D89937F3DBCDDBF7F9EEEEDB230CD82F429124F712
+        C3B0F10547629CB03E62C7DF714BCA350DF9283E1E67D79F998480D9D192EBFD
+        895B83E0D48D6AF8EB98D85650C788E41CCD85B4785AD99376154AB3126C8A18
+        2720E4FD2FDD9C17F89F044610030CE3425C743A3D1C8C0F860ED530E497D543
+        F1D1094598E03FDE6EA10DEF462EB12BC25C001B7924FB7890DFFCE49095F3C1
+        7BDE6C6059167AB4FDC07100AEA8E59BD256D819E409578A1F5B8A30C28FC5C3
+        2F65ADC032C6B07AEC7820DC17F6A45B17C198E029973E1387ACF8F8E5950BA0
+        AA6B189A948320C09F870D23D449A936D0C01CD66203BDE042410514A4D09C00
+        023F8FF0DFEEB5511F011FD5C01945BC19B618F65A11415D57C4BEE72DDA7DA0
+        336E833FE436AA403EA003218B7866D4853346C34F81800559430314A58A57E3
+        0FED085712F8D9FBED08FE1F3E5A0CB42B0789EB7D261441DC8591872FFEB07D
+        43E05B42D77938FA41D0F4F7C3A0EA1910052343C3A0D7E9C0EFA5405A6FA9AE
+        858254F126EC278B48CE969E3F9600E71FCAE8C8192B29CDF133B13774D13811
+        A48BCBE6F4BCEEDDA235B35A06196868780A6A8542DD557DEBC4E38B5F1492E5
+        D996793DEFC5D060A87BF0680CFC77845F2EEF40F0F8915B1632131C8A783564
+        21EC331341BA794467E4C9E3C5E1D0D0AE80FACA1A75515ADC0E6CEF46EB4773
+        DE947CFA27A7391E91375362C6C0732A3AE9B44F662F5311C450C9AEE005F0C6
+        A77F4071669C13E9EB25925CEF16C5444175652DD4145D49AF3A9BF933B6CBD1
+        C881E28CE68B3693E422851F4D806B955D344999C9D2F9A520F910B7D67B5480
+        3B15B04D92FB846304AE642A719401D84636F210DF4FC8C36720BCE71CC2F3AA
+        7BE8944F814DD2980A10AFF6C225C8C125D815864D0D24862B9A1F9A3B3FE504
+        AEE0676CB4E03ECFD610F8CD5A39054F198EF64AA027ECCBA070B294CD683D24
+        8E033FCD8E685A34358CDDAB8E1B114EA6BDB0B6974EF974E0A2000FD86F0107
+        3E096D1513FCD613C5B4464E4A94FFBC09E160271E859F4B4D80DB8DCA69C323
+        57B8C33E490EDC99006E4B80097E57DA67D3D156097BC10DF6DB805B8B4BE167
+        115EDED44747321D78E832FBF0890498E0154F9F4D036B8C18BCC47552704B01
+        2678659B8AEED9298F1C3BAC593C17122709371760841F4980C7B2E7C61363AA
+        6CDC9FAB7C66DB830BA333FEBC2810081380D35F2D48DDFE1A1140DF70BF1EDE
+        0935B28169C30316BA40226EB53B9F5B8533EB3FFC366AEDBA90E2C5BEDE507C
+        B70EF08D3987087043014A22E049879ADE585329E4325AEEED0CAF4B4C709928
+        335F4A46588823C4BA6E7496230E5FCE3FB02364739B9A83D2FB7550981AEB45
+        05A0ADC425B8770697A0593E486FAC49C1F14258EA396B0C3C2A3D4FFA41C23A
+        F8FEEADFF86C8B9D836DEACDA9979238768624D0CF6BC98EF5CBE1F4A34EE869
+        6A192A3C2AF6A34B80E685B634FC93EC92339884ADBD43764510B8AFC74C4832
+        836FC9C893C6440481A7B3039C2AACA1AF2A0F170760D177998F07ACF2F3828A
+        8E01A89776416F63D5E5D2AFDE39684A424B1132A5064518ACC005B0C8DD898E
+        BC8C87E39B42BA65E36AA8C4248EF17705B596333EB71C58EAAF50EBA0B35F0B
+        6A8D163A1AFF85F29387C295CD55D563B6A1A588EE6723A0B710C162B0F9AE8E
+        63E0DB8EE74BC3C2D742BB127308678EDCF9B3104C0E641DC7022B64E98CE9B5
+        5A903535434F7DF9D70F4F1ECA4287EE710791A508B94A6B1241E09E731DCCE1
+        24DBC9EDE923CAC8AD0A085D077ABD8E5E048C404077878350089AC14150CA7B
+        A1AF5701AAD6BA33F7BFFB48827DDA48DF098F627311A73131FBD4C644767316
+        4252E618780FDF87FAA38892E0880D308223ADBAFB80FEAF2085E30C431A95FC
+        D13FA7D2B206BA9F3661530718DF1E06AB9791B908F21021855CA96513EF7393
+        7F747A6EC926F15628BD5184FB3C56CCFBE878602F1A39E3C96B4B4F3ADABC8E
+        4783E23951421AF0CFA6ADE3D5E48FAFE812CD7345694956D2DB585781F175A5
+        E1C13AF34E761F247CD0457C5D06B6CFF6517F6F1ED68AF6DC166032F70D09EA
+        CC7F5B3ED7ACF9CFE4473D6EC496E53F5F250FDC4C61F9B50000000049454E44
+        AE426082}
+    end
+  end
+  object ADOConnSource: TADOConnection
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 880
+    Top = 104
+  end
+  object PngImageList1: TPngImageList
+    PngImages = <
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          610000001974455874536F6674776172650041646F626520496D616765526561
+          647971C9653C000001CE4944415478DAA5534B28FC51143EC74CC4F4B3B12065
+          A1445136928DA2949212919190B09147C2E419112684C66B41F24C9E919252F6
+          928DFAFF1BC20A2B65C762C6BDC7B9F737BFD4ECC6DC3A9D73EEE3BBDF3DF73B
+          484410CEC0D28EBD96DCFCECC98F2F72682C2981D88414EC0924712E047BD25E
+          F05A6CA4EFD3EB7DEB3999732EE1D8E1B3300C4744A8373F7BEFA5A723CF86FD
+          BB4F7F7AC3FBEB0BACB8F211FBB61F69A22625648046F715ACF51520F66E3D90
+          BB36157CDFFC665E50EF16924BC199D431D7E39B4CE37AF80441728201F5E397
+          B03150C8009BF7E4AE4B033F6F0455284611CA9B29C7A00B2AA4392719283E2E
+          1AEA462E606BB808D1B5FE9FA6EAD3F54D9A813252D507CD40816893A041148B
+          38230A6A86CE6167B418B17BED1F4D376498B7B2610044068088299831685095
+          183176A81E3C83DDB112C4CED53B9A69CAD400D6B0C4650121B3538703320147
+          941DAAFA4F616FA214B17DF9963CCD5920D4C6A0C3C12AB55846DBED50E13A82
+          A3E90AC4B6851B9A6FCDFE3D6452806071488B1D5388B4D9A0BCEB008E672A11
+          5B3CD7B4D89E13B20ECA3AF7E164D689AA17F6E393122BA5D23B0B4028AFFEDE
+          EFD75EF780EA0B11E80B3567D239E05E7062D8DD182EC00FFD5A32F08EC9B5CE
+          0000000049454E44AE426082}
+        Name = 'PngImage0'
+        Background = clWindow
+      end
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          610000000473424954080808087C0864880000001974455874536F6674776172
+          65007777772E696E6B73636170652E6F72679BEE3C1A000001914944415478DA
+          63FCFFFF3F032EA0E8DDC10CA438EE6FADF88A4B0D233E03947DBB6A181919B5
+          EF6C2A8D24D900A0EDDACCCCCCA7585898197EFEFC150E74C516A20D006A6601
+          52A780D8102AF41288B58086BC23C90BC400B801A00003DAF077E2C489AFFEFE
+          FD2B8A4D31D04BAFF3F3F3C5806A59816A7FC30D000A0803D9F381827E7D7D7D
+          FF0D6DFD19FEFDC374D9C5A39B188A8A8A1881EA6B80DC7340F5DB1815BCDAD5
+          8026EFFFF7EF9FE0BD2DE55C2003C4351C1856ECBC88A239D4558FE1CDAD8360
+          03947D3B7B8016140163280B6440191313532B03C3FF3F77379773820CC8CACA
+          0286FC4F1403D8D9D919A64D9B0637808191B1889181E12AD80B4A3E9DD14035
+          FD401788810C484B4B63F8F6ED1B8A015C5C5C0CB366CD8279A11318BDC67FFE
+          FCF5470E447DA09F2E820C484A4AC21AE2F3E6CD8319008ADE8B40F5FF30A291
+          98582026213101293E34E12F401BFF109590A099E8240334253232323C042AD3
+          011AF08D2803A0866832B3309F6102EAFEFDFB8F0B50F371BC29111B00E6C64A
+          A07EE13B9BCA4A70A901008F6CD00E712B8B910000000049454E44AE426082}
+        Name = 'PngImage1'
+        Background = clWindow
+      end
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          610000001974455874536F6674776172650041646F626520496D616765526561
+          647971C9653C0000024A4944415478DA8D535D485361187EDE73CE76B6D51CC3
+          8B26DA24F4262F7623145424580C6D24DD44DD2692DD7437256A69364DB0BFAB
+          7EA0BA8D1551E1A68CB2284BA391510DB556241B64B8896EED3405CFCED777BC
+          18B164ED85E7E2FB5EDEE77BDEE77B5FAAE8191D364BC241C618CA0D22C28AAA
+          05ED66431B6D391F66FD6D3B90D7340865146B1CA220C0371C812C894495E746
+          D9ADA37BE07D9280C419A844B1AE51E50C97DC4E74042660364844B69E11F6B8
+          BD1943930B104997B7A1E875E804794ED0B5DB01CF9D173018CD4416DF08FBED
+          3F5076FF05CAB36F90ABF71199CE84D84ABF07B3B333FC857F25104960CA4F48
+          AFBA795E5ACF1B4411B2C9044D34A240908827C08AF5F3338932D4F838F0E50A
+          AA5B0EF34B819B2861EE510893B1B4AF40B0984A71878B0904906442F6ED0D98
+          F21154EDF72317F34249A898FE6EC7BE93772B493E1D62AB031E284A165AF128
+          7002C1B809F30F8EC3E1AA836C55B0BAF815C9480A9D9976DCB4DDA602819657
+          B9C3ACA85E84280AF830D00057E731E47309A4E7D2484EC561340AD0782B64E6
+          2DE4780BA5E2BD7F1B36D73821DBEDD8BACBC55509484D4411FBF4638CF828B3
+          4C5FEB7FBF6D792A00815EC3E674603E18C685A41BD74EF5D691D51B7849968A
+          BD6B7C428A3DD0BF750D86F5D98F6EBF8A86432D98BE1742DF422BC24B55E3B0
+          D736E9B6D773D84ABD7EBDD773D95DB3DCA42F42F733CB8987F7C7DEF1EB4CF5
+          E0F36F543BF874C3227DB51498F1593E82256665394DFCD5D8156DE6A958C7C5
+          A16C50DD0999EB2BB53B7F472387CAF1B138F10788E6DBD347AD127200000000
+          49454E44AE426082}
+        Name = 'PngImage3'
+        Background = clWindow
+      end
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          61000002FE4944415478DA6364C0015CAD8C79761F3BFB454F559E4958589873
+          FF89735FB1A963C426B8B72670B2B1D09FE4B2D3CC3656C2BF8C03A47F4E9C72
+          872BBB66EEE6F9380DF07330E38A3195CEDDFAE0EFC234F5FF530D057E053DF9
+          F2FF8E00CB6F416EC6DFC2331FF0D5BEFBF67BB32CF77FCBF9173FCD3A71F2D4
+          3F140396170796FBCBFCEAF8FAEBEF474EC63F3C4CFFFE30FFFFF79781E1DF1F
+          20FECBF0EDF7BFCFECFF7F7330FDFFC352714FC975CAF2CD7B510C880EF29198
+          60FAEB0637D36F7EB0C6BF108D1003FE30C0C4CE7DE6B9D4F350C266D3E62D9F
+          E106ECABF09ACCC1F8574A8FEF873F23D06690C69B9F59EE1E7DCFB5868BF10F
+          879BC09B1841A61FC2FF8106BCFBCDF2E6E14FAE83E7BF091CCC5F786032A39D
+          891ECFC620A1576C0C7F3819FE426CBCF985F56ED34D61C70D9B363F0659901C
+          E4AEDFA978E7182BC33FAEBFFF1819FEFD6764B8F08DFF6CC9A97F166017A484
+          F91895AABC5F29C3F65D0564C8BC67A29DB973F7542087767FBC437E9CE0A309
+          7F819A8F7C15DEBFFC8D44C6EA0D9B6E31EA28CB3295B9A824BB8B7C6CE766FC
+          250CF2E7CAD7621393E71C2A4036607BAAF10C23CE8FE9FFFE33303CF8C9757D
+          FD4789DCAE95BBF6325A1AE9726FF3647CCDFAFF3727C8EFFF815E78F78BE56D
+          EB1365E7596BB65F04699E106D1D162EF47239D0E94CFF809107F2C2A51FFC67
+          6BCEFD8278A139DE3D111858D231420FCB8081C90BF2E7F77FCCDF6EFDE039C4
+          09E4CBB27CB704DA0CD4CCC870FB17CF9D13DF8516BCF8CB7E79CACAAD9BE0D1
+          58116AAF5F2AF3E434C3FFFFAC201B407E85D9F60FCA0689BDF8CDF1A8FBB58C
+          C186CD5BDFA3A483C9F1F61911024FA65DF8CE7F5986E5BB141FE31F91BFFFA1
+          06006DBEF38BFB0ED0356C3C0C7FC4A77E56769FB37AD34114030CF4F599AC34
+          641D1F7EF9772A47E2E57C2DB6CFC1C7BF0BED9760FA2121C5FC4373C517999A
+          D39F58A78973B1EA9DBEF5F0F0C58B1751933232E88A76CAD564FB1CBFE88364
+          9434F30F593BAE0F9D7B7F88354D5DB5651351B9110474747458AE5CB9F2079D
+          8D0E00A0CD754533F3725E0000000049454E44AE426082}
+        Name = 'PngImage4'
+        Background = clWindow
+      end
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          6100000006624B474400FF00FF00FFA0BDA793000000097048597300000B1200
+          000B1201D2DD7EFC0000000774494D45000000000000000973942E0000016649
+          44415478DAA5934D28445114C7DF2BC2429A301B49529A85A66C08A148BDCD58
+          CC82B1989A32ABC9EC584916968AF2918DB01159B09BA458206565EC584C938D
+          05F2354216F89DE6BEBADD84C7AD5FE7DCF3CEF9BF73CFBBCFB6FEB9EC2F6201
+          18874E28876198F522B0061108411B38D0F85B814AB8806BA8F9CB11066111D6
+          61C00DF6859D8E8DCDEDFD9F046ED499DD7547612B560A4B1128D10B79F68A49
+          981D1C4313F4907084BD02B10E02EF86C00226AA0B14400E8A651624CC61BB28
+          F4E35FAAEE7CB002BDE087075D2008A720C955143D62271198C017F15B388751
+          623BC46AF133BA400C96610BC22448CB75246755CB29E9907DBFDA8F61467481
+          1948C210CC93F0A186F7845F8FBF0A0D5046EC8D98CC675717388416A8966390
+          F08C5D82389C40B79C59CD49F6CD50E10A14C23D1C58F99B272D2630D3BCADC8
+          98FE8B1291BB71E60AB4ABEF2D6FD9FBEEE699974A04D2322C2BFF034D591E97
+          EDB5C05C9F5C756F958ED3CD000000000049454E44AE426082}
+        Name = 'PngImage5'
+        Background = clWindow
+      end
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          610000001974455874536F6674776172650041646F626520496D616765526561
+          647971C9653C000002AE4944415478DA7D927B48537114C7BFBFBBED3A9D4694
+          2944AEC12A7A88968521445AD0C396166D364893D00C179469162615BD0CF311
+          210493B412A1C8BC5052080966195A113D4C312833961A6A0F9B333177F7EB77
+          7F4BEB0FE7EF722EF79E7BCFE79CEF3987504A4108C1597B6D2D7B3453504C1C
+          A25C04D2894C8B05531C1EABDC4EB360837EAE393424983B290F0607F70F7CC5
+          27479F74CA9664F109385E7693E665EE84FBB79B39FFFDC0E2A116D528B4D7A0
+          206B17F109C8BF74831EDE6BC6F34E87E2E6A54FD411BD448F920A0985D9C9BE
+          017917AB6976BA198E815108E46F6AE6F730863EC41FC51577519A3B4D05474B
+          AB69D69EEDA8AA7B0241205CBF92DFE3015212635174AD1E978F98A7011457D1
+          FDA989F831020E9898814C05E802FCF0F2960D2B83DA40555A1041A534D7BE28
+          A5C93609C82DBE4EF7256F85F4E00597A0745FE9840C3F24CC69C40C5723C2C2
+          2320885A5059C697F7DD181972DA17263FB47140CE85AB34CD1A0F3702BCE353
+          CA2302644107DC366085290944F4437DE5239640C0A6B4B578D7FC188B539B89
+          17505849775B36A3A1A58367E704A8E15605627D4F12565BD3B9A87B6512FF6E
+          CAB1A2BDBE0EE1692D5EC0A1F357A875C7060C7E77F2FC02D1B066F8638C5510
+          DA1085E82D0910546A664C3FD328CB1E74B43C456446AB17709001CCA6387CFB
+          E962F1026B6420CE3C5B806A7129E64546212864367EF5F741C396CA23537477
+          F5A2BB7758321D7B65F102CE95D384F858B86511AE3117B43A038CAD31D02F8F
+          41609801433D1FF1BAB9152A8D066A56C9A0D32D6D3BF93687C53A38E0404139
+          356D5C8351B6CA32D122E28D09C1F38D981566C4B073189FDBDBB02CB36DD57F
+          2B30C8CC3139C68CFC922651AB8B55366F1C5AC4F9DFC742B1936BFE301E813B
+          FD714D354519EB7C2E12EBAC91BDCF84EF33C4AC6B2AC01F85143EF0CD91BAEF
+          0000000049454E44AE426082}
+        Name = 'PngImage6'
+        Background = clWindow
+      end>
+    Left = 912
+    Top = 104
+    Bitmap = {}
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '*.xml'
+    Filter = 'xml'#25991#20214'|*.xml|'#25152#26377#25991#20214'|*.*'
+    Left = 944
+    Top = 104
+  end
+  object ADOConnDest: TADOConnection
+    LoginPrompt = False
+    Provider = 'SQLOLEDB.1'
+    Left = 976
+    Top = 104
+  end
+  object DBLoader1: TDBLoader
+    OnDeleteDestDB = DBLoader1DeleteDestDB
+    OnCreateSourceDB = DBLoader1CreateSourceDB
+    Left = 1008
+    Top = 104
+  end
+  object MainMenu1: TMainMenu
+    AutoHotkeys = maManual
+    Left = 848
+    Top = 104
+    object N1: TMenuItem
+      Caption = #25991#20214'(&F)'
+      object miReverse: TMenuItem
+        Caption = #21453#23556'(&T)...'
+        OnClick = miReverseClick
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object miCompare: TMenuItem
+        Caption = #27604#23545#26356#26032'(&C)...'
+        OnClick = miCompareClick
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object E1: TMenuItem
+        Caption = #36864#20986'(&E)'
+        OnClick = E1Click
+      end
+    end
+    object N3: TMenuItem
+      Caption = #37197#32622#31649#29702
+      object nConfigAdd: TMenuItem
+        Caption = #28155#21152#37197#32622
+        OnClick = nConfigAddClick
+      end
+      object nConfigEdit: TMenuItem
+        Caption = #20462#25913#37197#32622
+        OnClick = nConfigEditClick
+      end
+      object nConfigDelete: TMenuItem
+        Caption = #21024#38500#37197#32622
+        OnClick = nConfigDeleteClick
+      end
+    end
+  end
+  object ImgLstTree: TPngImageList
+    Height = 10
+    Width = 10
+    PngImages = <
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D494844520000000A0000000A08060000008D32CF
+          BD000000097048597300000B1300000B1301009A9C1800000A4F694343505068
+          6F746F73686F70204943432070726F66696C65000078DA9D53675453E9163DF7
+          DEF4424B8880944B6F5215082052428B801491262A2109104A8821A1D91551C1
+          114545041BC8A088038E8E808C15512C0C8A0AD807E421A28E83A3888ACAFBE1
+          7BA36BD6BCF7E6CDFEB5D73EE7ACF39DB3CF07C0080C9648335135800CA9421E
+          11E083C7C4C6E1E42E40810A2470001008B3642173FD230100F87E3C3C2B22C0
+          07BE000178D30B0800C04D9BC0301C87FF0FEA42995C01808401C07491384B08
+          801400407A8E42A600404601809D98265300A0040060CB6362E300502D006027
+          7FE6D300809DF8997B01005B94211501A09100201365884400683B00ACCF568A
+          450058300014664BC43900D82D00304957664800B0B700C0CE100BB200080C00
+          305188852900047B0060C8232378008499001446F2573CF12BAE10E72A000078
+          99B23CB9243945815B082D710757572E1E28CE49172B14366102619A402EC279
+          99193281340FE0F3CC0000A0911511E083F3FD78CE0EAECECE368EB60E5F2DEA
+          BF06FF226262E3FEE5CFAB70400000E1747ED1FE2C2FB31A803B06806DFEA225
+          EE04685E0BA075F78B66B20F40B500A0E9DA57F370F87E3C3C45A190B9D9D9E5
+          E4E4D84AC4425B61CA577DFE67C25FC057FD6CF97E3CFCF7F5E0BEE22481325D
+          814704F8E0C2CCF44CA51CCF92098462DCE68F47FCB70BFFFC1DD322C44962B9
+          582A14E35112718E449A8CF332A52289429229C525D2FF64E2DF2CFB033EDF35
+          00B06A3E017B912DA85D6303F64B27105874C0E2F70000F2BB6FC1D428080380
+          6883E1CF77FFEF3FFD47A02500806649927100005E44242E54CAB33FC7080000
+          44A0812AB0411BF4C1182CC0061CC105DCC10BFC6036844224C4C24210420A64
+          801C726029AC82422886CDB01D2A602FD4401D34C051688693700E2EC255B80E
+          3D700FFA61089EC128BC81090441C808136121DA8801628A58238E08179985F8
+          21C14804128B2420C9881451224B91354831528A542055481DF23D720239875C
+          46BA913BC8003282FC86BC47319481B2513DD40CB543B9A8371A8446A20BD064
+          74319A8F16A09BD072B41A3D8C36A1E7D0AB680FDA8F3E43C730C0E8180733C4
+          6C302EC6C342B1382C099363CBB122AC0CABC61AB056AC03BB89F563CFB17704
+          128145C0093604774220611E4148584C584ED848A8201C243411DA0937090384
+          51C2272293A84BB426BA11F9C4186232318758482C23D6128F132F107B8843C4
+          37241289433227B9900249B1A454D212D246D26E5223E92CA99B34481A2393C9
+          DA646BB20739942C202BC885E49DE4C3E433E41BE421F25B0A9D624071A4F853
+          E22852CA6A4A19E510E534E5066598324155A39A52DDA8A15411358F5A42ADA1
+          B652AF5187A81334759A39CD8316494BA5ADA295D31A681768F769AFE874BA11
+          DD951E4E97D057D2CBE947E897E803F4770C0D861583C7886728199B18071867
+          197718AF984CA619D38B19C754303731EB98E7990F996F55582AB62A7C1591CA
+          0A954A9526951B2A2F54A9AAA6AADEAA0B55F355CB548FA95E537DAE46553353
+          E3A909D496AB55AA9D50EB531B5367A93BA887AA67A86F543FA47E59FD890659
+          C34CC34F43A451A0B15FE3BCC6200B6319B3782C216B0DAB86758135C426B1CD
+          D97C762ABB98FD1DBB8B3DAAA9A13943334A3357B352F394663F07E39871F89C
+          744E09E728A797F37E8ADE14EF29E2291BA6344CB931655C6BAA96979658AB48
+          AB51AB47EBBD36AEEDA79DA6BD45BB59FB810E41C74A275C2747678FCE059DE7
+          53D953DDA70AA7164D3D3AF5AE2EAA6BA51BA1BB4477BF6EA7EE989EBE5E809E
+          4C6FA7DE79BDE7FA1C7D2FFD54FD6DFAA7F5470C5806B30C2406DB0CCE183CC5
+          35716F3C1D2FC7DBF151435DC34043A561956197E18491B9D13CA3D5468D460F
+          8C69C65CE324E36DC66DC6A326062621264B4DEA4DEE9A524DB9A629A63B4C3B
+          4CC7CDCCCDA2CDD699359B3D31D732E79BE79BD79BDFB7605A785A2CB6A8B6B8
+          6549B2E45AA659EEB6BC6E855A3959A558555A5DB346AD9DAD25D6BBADBBA711
+          A7B94E934EAB9ED667C3B0F1B6C9B6A9B719B0E5D806DBAEB66DB67D61676217
+          67B7C5AEC3EE93BD937DBA7D8DFD3D070D87D90EAB1D5A1D7E73B472143A563A
+          DE9ACE9CEE3F7DC5F496E92F6758CF10CFD833E3B613CB29C4699D539BD34767
+          1767B97383F3888B894B82CB2E973E2E9B1BC6DDC8BDE44A74F5715DE17AD2F5
+          9D9BB39BC2EDA8DBAFEE36EE69EE87DC9FCC349F299E593373D0C3C843E051E5
+          D13F0B9F95306BDFAC7E4F434F8167B5E7232F632F9157ADD7B0B7A577AAF761
+          EF173EF63E729FE33EE33C37DE32DE595FCC37C0B7C8B7CB4FC36F9E5F85DF43
+          7F23FF64FF7AFFD100A78025016703898141815B02FBF87A7C21BF8E3F3ADB65
+          F6B2D9ED418CA0B94115418F82AD82E5C1AD2168C8EC90AD21F7E798CE91CE69
+          0E85507EE8D6D00761E6618BC37E0C2785878557863F8E7088581AD131973577
+          D1DC4373DF44FA449644DE9B67314F39AF2D4A352A3EAA2E6A3CDA37BA34BA3F
+          C62E6659CCD5589D58496C4B1C392E2AAE366E6CBEDFFCEDF387E29DE20BE37B
+          17982FC85D7079A1CEC2F485A716A92E122C3A96404C884E3894F041102AA816
+          8C25F21377258E0A79C21DC267222FD136D188D8435C2A1E4EF2482A4D7A92EC
+          91BC357924C533A52CE5B98427A990BC4C0D4CDD9B3A9E169A76206D323D3ABD
+          31839291907142AA214D93B667EA67E66676CBAC6585B2FEC56E8BB72F1E9507
+          C96BB390AC05592D0AB642A6E8545A28D72A07B267655766BFCD89CA3996AB9E
+          2BCDEDCCB3CADB90379CEF9FFFED12C212E192B6A5864B572D1D58E6BDAC6A39
+          B23C7179DB0AE315052B865606AC3CB88AB62A6DD54FABED5797AE7EBD267A4D
+          6B815EC1CA82C1B5016BEB0B550AE5857DEBDCD7ED5D4F582F59DFB561FA869D
+          1B3E15898AAE14DB1797157FD828DC78E51B876FCABF99DC94B4A9ABC4B964CF
+          66D266E9E6DE2D9E5B0E96AA97E6970E6E0DD9DAB40DDF56B4EDF5F645DB2F97
+          CD28DBBB83B643B9A3BF3CB8BC65A7C9CECD3B3F54A454F454FA5436EED2DDB5
+          61D7F86ED1EE1B7BBCF634ECD5DB5BBCF7FD3EC9BEDB5501554DD566D565FB49
+          FBB3F73FAE89AAE9F896FB6D5DAD4E6D71EDC703D203FD07230EB6D7B9D4D51D
+          D23D54528FD62BEB470EC71FBEFE9DEF772D0D360D558D9CC6E223704479E4E9
+          F709DFF71E0D3ADA768C7BACE107D31F761D671D2F6A429AF29A469B539AFB5B
+          625BBA4FCC3ED1D6EADE7AFC47DB1F0F9C343C59794AF354C969DAE982D39367
+          F2CF8C9D959D7D7E2EF9DC60DBA2B67BE763CEDF6A0F6FEFBA1074E1D245FF8B
+          E73BBC3BCE5CF2B874F2B2DBE51357B8579AAF3A5F6DEA74EA3CFE93D34FC7BB
+          9CBB9AAEB95C6BB9EE7ABDB57B66F7E91B9E37CEDDF4BD79F116FFD6D59E393D
+          DDBDF37A6FF7C5F7F5DF16DD7E7227FDCECBBBD97727EEADBC4FBC5FF440ED41
+          D943DD87D53F5BFEDCD8EFDC7F6AC077A0F3D1DC47F7068583CFFE91F58F0F43
+          058F998FCB860D86EB9E383E3939E23F72FDE9FCA743CF64CF269E17FEA2FECB
+          AE17162F7EF8D5EBD7CED198D1A197F29793BF6D7CA5FDEAC0EB19AFDBC6C2C6
+          1EBEC97833315EF456FBEDC177DC771DEFA3DF0F4FE47C207F28FF68F9B1F553
+          D0A7FB93199393FF040398F3FC63332DDB0000009B4944415478DA63FCFFFF3F
+          835FDBFBFF0C58C0A62A4146189B11A6102888A110280E570C57B8BE9C0FAE60
+          EEDE1F0CC9CE1C607660E727B062B8C2D5C55C7085F3F7FF06D3898EAC0CA1BD
+          DF50152ECF67832A033917EE3486C889BF50152ECC64044A4314FD67FCCFC008
+          56FC9F216E1A03AAC23929BFB1799C21650E2BAAC21909DFB12ACC58C089AA70
+          4ACC67AC0A7396F0A22A64C003400A01AC1967ED2C3916410000000049454E44
+          AE426082}
+        Name = 'PngImage0'
+        Background = clWindow
+      end
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D494844520000000A0000000A08060000008D32CF
+          BD000000097048597300000B1300000B1301009A9C1800000A4F694343505068
+          6F746F73686F70204943432070726F66696C65000078DA9D53675453E9163DF7
+          DEF4424B8880944B6F5215082052428B801491262A2109104A8821A1D91551C1
+          114545041BC8A088038E8E808C15512C0C8A0AD807E421A28E83A3888ACAFBE1
+          7BA36BD6BCF7E6CDFEB5D73EE7ACF39DB3CF07C0080C9648335135800CA9421E
+          11E083C7C4C6E1E42E40810A2470001008B3642173FD230100F87E3C3C2B22C0
+          07BE000178D30B0800C04D9BC0301C87FF0FEA42995C01808401C07491384B08
+          801400407A8E42A600404601809D98265300A0040060CB6362E300502D006027
+          7FE6D300809DF8997B01005B94211501A09100201365884400683B00ACCF568A
+          450058300014664BC43900D82D00304957664800B0B700C0CE100BB200080C00
+          305188852900047B0060C8232378008499001446F2573CF12BAE10E72A000078
+          99B23CB9243945815B082D710757572E1E28CE49172B14366102619A402EC279
+          99193281340FE0F3CC0000A0911511E083F3FD78CE0EAECECE368EB60E5F2DEA
+          BF06FF226262E3FEE5CFAB70400000E1747ED1FE2C2FB31A803B06806DFEA225
+          EE04685E0BA075F78B66B20F40B500A0E9DA57F370F87E3C3C45A190B9D9D9E5
+          E4E4D84AC4425B61CA577DFE67C25FC057FD6CF97E3CFCF7F5E0BEE22481325D
+          814704F8E0C2CCF44CA51CCF92098462DCE68F47FCB70BFFFC1DD322C44962B9
+          582A14E35112718E449A8CF332A52289429229C525D2FF64E2DF2CFB033EDF35
+          00B06A3E017B912DA85D6303F64B27105874C0E2F70000F2BB6FC1D428080380
+          6883E1CF77FFEF3FFD47A02500806649927100005E44242E54CAB33FC7080000
+          44A0812AB0411BF4C1182CC0061CC105DCC10BFC6036844224C4C24210420A64
+          801C726029AC82422886CDB01D2A602FD4401D34C051688693700E2EC255B80E
+          3D700FFA61089EC128BC81090441C808136121DA8801628A58238E08179985F8
+          21C14804128B2420C9881451224B91354831528A542055481DF23D720239875C
+          46BA913BC8003282FC86BC47319481B2513DD40CB543B9A8371A8446A20BD064
+          74319A8F16A09BD072B41A3D8C36A1E7D0AB680FDA8F3E43C730C0E8180733C4
+          6C302EC6C342B1382C099363CBB122AC0CABC61AB056AC03BB89F563CFB17704
+          128145C0093604774220611E4148584C584ED848A8201C243411DA0937090384
+          51C2272293A84BB426BA11F9C4186232318758482C23D6128F132F107B8843C4
+          37241289433227B9900249B1A454D212D246D26E5223E92CA99B34481A2393C9
+          DA646BB20739942C202BC885E49DE4C3E433E41BE421F25B0A9D624071A4F853
+          E22852CA6A4A19E510E534E5066598324155A39A52DDA8A15411358F5A42ADA1
+          B652AF5187A81334759A39CD8316494BA5ADA295D31A681768F769AFE874BA11
+          DD951E4E97D057D2CBE947E897E803F4770C0D861583C7886728199B18071867
+          197718AF984CA619D38B19C754303731EB98E7990F996F55582AB62A7C1591CA
+          0A954A9526951B2A2F54A9AAA6AADEAA0B55F355CB548FA95E537DAE46553353
+          E3A909D496AB55AA9D50EB531B5367A93BA887AA67A86F543FA47E59FD890659
+          C34CC34F43A451A0B15FE3BCC6200B6319B3782C216B0DAB86758135C426B1CD
+          D97C762ABB98FD1DBB8B3DAAA9A13943334A3357B352F394663F07E39871F89C
+          744E09E728A797F37E8ADE14EF29E2291BA6344CB931655C6BAA96979658AB48
+          AB51AB47EBBD36AEEDA79DA6BD45BB59FB810E41C74A275C2747678FCE059DE7
+          53D953DDA70AA7164D3D3AF5AE2EAA6BA51BA1BB4477BF6EA7EE989EBE5E809E
+          4C6FA7DE79BDE7FA1C7D2FFD54FD6DFAA7F5470C5806B30C2406DB0CCE183CC5
+          35716F3C1D2FC7DBF151435DC34043A561956197E18491B9D13CA3D5468D460F
+          8C69C65CE324E36DC66DC6A326062621264B4DEA4DEE9A524DB9A629A63B4C3B
+          4CC7CDCCCDA2CDD699359B3D31D732E79BE79BD79BDFB7605A785A2CB6A8B6B8
+          6549B2E45AA659EEB6BC6E855A3959A558555A5DB346AD9DAD25D6BBADBBA711
+          A7B94E934EAB9ED667C3B0F1B6C9B6A9B719B0E5D806DBAEB66DB67D61676217
+          67B7C5AEC3EE93BD937DBA7D8DFD3D070D87D90EAB1D5A1D7E73B472143A563A
+          DE9ACE9CEE3F7DC5F496E92F6758CF10CFD833E3B613CB29C4699D539BD34767
+          1767B97383F3888B894B82CB2E973E2E9B1BC6DDC8BDE44A74F5715DE17AD2F5
+          9D9BB39BC2EDA8DBAFEE36EE69EE87DC9FCC349F299E593373D0C3C843E051E5
+          D13F0B9F95306BDFAC7E4F434F8167B5E7232F632F9157ADD7B0B7A577AAF761
+          EF173EF63E729FE33EE33C37DE32DE595FCC37C0B7C8B7CB4FC36F9E5F85DF43
+          7F23FF64FF7AFFD100A78025016703898141815B02FBF87A7C21BF8E3F3ADB65
+          F6B2D9ED418CA0B94115418F82AD82E5C1AD2168C8EC90AD21F7E798CE91CE69
+          0E85507EE8D6D00761E6618BC37E0C2785878557863F8E7088581AD131973577
+          D1DC4373DF44FA449644DE9B67314F39AF2D4A352A3EAA2E6A3CDA37BA34BA3F
+          C62E6659CCD5589D58496C4B1C392E2AAE366E6CBEDFFCEDF387E29DE20BE37B
+          17982FC85D7079A1CEC2F485A716A92E122C3A96404C884E3894F041102AA816
+          8C25F21377258E0A79C21DC267222FD136D188D8435C2A1E4EF2482A4D7A92EC
+          91BC357924C533A52CE5B98427A990BC4C0D4CDD9B3A9E169A76206D323D3ABD
+          31839291907142AA214D93B667EA67E66676CBAC6585B2FEC56E8BB72F1E9507
+          C96BB390AC05592D0AB642A6E8545A28D72A07B267655766BFCD89CA3996AB9E
+          2BCDEDCCB3CADB90379CEF9FFFED12C212E192B6A5864B572D1D58E6BDAC6A39
+          B23C7179DB0AE315052B865606AC3CB88AB62A6DD54FABED5797AE7EBD267A4D
+          6B815EC1CA82C1B5016BEB0B550AE5857DEBDCD7ED5D4F582F59DFB561FA869D
+          1B3E15898AAE14DB1797157FD828DC78E51B876FCABF99DC94B4A9ABC4B964CF
+          66D266E9E6DE2D9E5B0E96AA97E6970E6E0DD9DAB40DDF56B4EDF5F645DB2F97
+          CD28DBBB83B643B9A3BF3CB8BC65A7C9CECD3B3F54A454F454FA5436EED2DDB5
+          61D7F86ED1EE1B7BBCF634ECD5DB5BBCF7FD3EC9BEDB5501554DD566D565FB49
+          FBB3F73FAE89AAE9F896FB6D5DAD4E6D71EDC703D203FD07230EB6D7B9D4D51D
+          D23D54528FD62BEB470EC71FBEFE9DEF772D0D360D558D9CC6E223704479E4E9
+          F709DFF71E0D3ADA768C7BACE107D31F761D671D2F6A429AF29A469B539AFB5B
+          625BBA4FCC3ED1D6EADE7AFC47DB1F0F9C343C59794AF354C969DAE982D39367
+          F2CF8C9D959D7D7E2EF9DC60DBA2B67BE763CEDF6A0F6FEFBA1074E1D245FF8B
+          E73BBC3BCE5CF2B874F2B2DBE51357B8579AAF3A5F6DEA74EA3CFE93D34FC7BB
+          9CBB9AAEB95C6BB9EE7ABDB57B66F7E91B9E37CEDDF4BD79F116FFD6D59E393D
+          DDBDF37A6FF7C5F7F5DF16DD7E7227FDCECBBBD97727EEADBC4FBC5FF440ED41
+          D943DD87D53F5BFEDCD8EFDC7F6AC077A0F3D1DC47F7068583CFFE91F58F0F43
+          058F998FCB860D86EB9E383E3939E23F72FDE9FCA743CF64CF269E17FEA2FECB
+          AE17162F7EF8D5EBD7CED198D1A197F29793BF6D7CA5FDEAC0EB19AFDBC6C2C6
+          1EBEC97833315EF456FBEDC177DC771DEFA3DF0F4FE47C207F28FF68F9B1F553
+          D0A7FB93199393FF040398F3FC63332DDB0000003B4944415478DA63FCFFFF3F
+          83C334CDFF0C78C081ACEB8C8CF65335F02A82010C8540DD601A680B850A610A
+          D0014C03E90AA9EF4682C1436C800300D9212FDD913DFCF10000000049454E44
+          AE426082}
+        Name = 'PngImage1'
+        Background = clWindow
+      end
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D494844520000000A0000000A08060000008D32CF
+          BD000000097048597300000B1300000B1301009A9C1800000A4F694343505068
+          6F746F73686F70204943432070726F66696C65000078DA9D53675453E9163DF7
+          DEF4424B8880944B6F5215082052428B801491262A2109104A8821A1D91551C1
+          114545041BC8A088038E8E808C15512C0C8A0AD807E421A28E83A3888ACAFBE1
+          7BA36BD6BCF7E6CDFEB5D73EE7ACF39DB3CF07C0080C9648335135800CA9421E
+          11E083C7C4C6E1E42E40810A2470001008B3642173FD230100F87E3C3C2B22C0
+          07BE000178D30B0800C04D9BC0301C87FF0FEA42995C01808401C07491384B08
+          801400407A8E42A600404601809D98265300A0040060CB6362E300502D006027
+          7FE6D300809DF8997B01005B94211501A09100201365884400683B00ACCF568A
+          450058300014664BC43900D82D00304957664800B0B700C0CE100BB200080C00
+          305188852900047B0060C8232378008499001446F2573CF12BAE10E72A000078
+          99B23CB9243945815B082D710757572E1E28CE49172B14366102619A402EC279
+          99193281340FE0F3CC0000A0911511E083F3FD78CE0EAECECE368EB60E5F2DEA
+          BF06FF226262E3FEE5CFAB70400000E1747ED1FE2C2FB31A803B06806DFEA225
+          EE04685E0BA075F78B66B20F40B500A0E9DA57F370F87E3C3C45A190B9D9D9E5
+          E4E4D84AC4425B61CA577DFE67C25FC057FD6CF97E3CFCF7F5E0BEE22481325D
+          814704F8E0C2CCF44CA51CCF92098462DCE68F47FCB70BFFFC1DD322C44962B9
+          582A14E35112718E449A8CF332A52289429229C525D2FF64E2DF2CFB033EDF35
+          00B06A3E017B912DA85D6303F64B27105874C0E2F70000F2BB6FC1D428080380
+          6883E1CF77FFEF3FFD47A02500806649927100005E44242E54CAB33FC7080000
+          44A0812AB0411BF4C1182CC0061CC105DCC10BFC6036844224C4C24210420A64
+          801C726029AC82422886CDB01D2A602FD4401D34C051688693700E2EC255B80E
+          3D700FFA61089EC128BC81090441C808136121DA8801628A58238E08179985F8
+          21C14804128B2420C9881451224B91354831528A542055481DF23D720239875C
+          46BA913BC8003282FC86BC47319481B2513DD40CB543B9A8371A8446A20BD064
+          74319A8F16A09BD072B41A3D8C36A1E7D0AB680FDA8F3E43C730C0E8180733C4
+          6C302EC6C342B1382C099363CBB122AC0CABC61AB056AC03BB89F563CFB17704
+          128145C0093604774220611E4148584C584ED848A8201C243411DA0937090384
+          51C2272293A84BB426BA11F9C4186232318758482C23D6128F132F107B8843C4
+          37241289433227B9900249B1A454D212D246D26E5223E92CA99B34481A2393C9
+          DA646BB20739942C202BC885E49DE4C3E433E41BE421F25B0A9D624071A4F853
+          E22852CA6A4A19E510E534E5066598324155A39A52DDA8A15411358F5A42ADA1
+          B652AF5187A81334759A39CD8316494BA5ADA295D31A681768F769AFE874BA11
+          DD951E4E97D057D2CBE947E897E803F4770C0D861583C7886728199B18071867
+          197718AF984CA619D38B19C754303731EB98E7990F996F55582AB62A7C1591CA
+          0A954A9526951B2A2F54A9AAA6AADEAA0B55F355CB548FA95E537DAE46553353
+          E3A909D496AB55AA9D50EB531B5367A93BA887AA67A86F543FA47E59FD890659
+          C34CC34F43A451A0B15FE3BCC6200B6319B3782C216B0DAB86758135C426B1CD
+          D97C762ABB98FD1DBB8B3DAAA9A13943334A3357B352F394663F07E39871F89C
+          744E09E728A797F37E8ADE14EF29E2291BA6344CB931655C6BAA96979658AB48
+          AB51AB47EBBD36AEEDA79DA6BD45BB59FB810E41C74A275C2747678FCE059DE7
+          53D953DDA70AA7164D3D3AF5AE2EAA6BA51BA1BB4477BF6EA7EE989EBE5E809E
+          4C6FA7DE79BDE7FA1C7D2FFD54FD6DFAA7F5470C5806B30C2406DB0CCE183CC5
+          35716F3C1D2FC7DBF151435DC34043A561956197E18491B9D13CA3D5468D460F
+          8C69C65CE324E36DC66DC6A326062621264B4DEA4DEE9A524DB9A629A63B4C3B
+          4CC7CDCCCDA2CDD699359B3D31D732E79BE79BD79BDFB7605A785A2CB6A8B6B8
+          6549B2E45AA659EEB6BC6E855A3959A558555A5DB346AD9DAD25D6BBADBBA711
+          A7B94E934EAB9ED667C3B0F1B6C9B6A9B719B0E5D806DBAEB66DB67D61676217
+          67B7C5AEC3EE93BD937DBA7D8DFD3D070D87D90EAB1D5A1D7E73B472143A563A
+          DE9ACE9CEE3F7DC5F496E92F6758CF10CFD833E3B613CB29C4699D539BD34767
+          1767B97383F3888B894B82CB2E973E2E9B1BC6DDC8BDE44A74F5715DE17AD2F5
+          9D9BB39BC2EDA8DBAFEE36EE69EE87DC9FCC349F299E593373D0C3C843E051E5
+          D13F0B9F95306BDFAC7E4F434F8167B5E7232F632F9157ADD7B0B7A577AAF761
+          EF173EF63E729FE33EE33C37DE32DE595FCC37C0B7C8B7CB4FC36F9E5F85DF43
+          7F23FF64FF7AFFD100A78025016703898141815B02FBF87A7C21BF8E3F3ADB65
+          F6B2D9ED418CA0B94115418F82AD82E5C1AD2168C8EC90AD21F7E798CE91CE69
+          0E85507EE8D6D00761E6618BC37E0C2785878557863F8E7088581AD131973577
+          D1DC4373DF44FA449644DE9B67314F39AF2D4A352A3EAA2E6A3CDA37BA34BA3F
+          C62E6659CCD5589D58496C4B1C392E2AAE366E6CBEDFFCEDF387E29DE20BE37B
+          17982FC85D7079A1CEC2F485A716A92E122C3A96404C884E3894F041102AA816
+          8C25F21377258E0A79C21DC267222FD136D188D8435C2A1E4EF2482A4D7A92EC
+          91BC357924C533A52CE5B98427A990BC4C0D4CDD9B3A9E169A76206D323D3ABD
+          31839291907142AA214D93B667EA67E66676CBAC6585B2FEC56E8BB72F1E9507
+          C96BB390AC05592D0AB642A6E8545A28D72A07B267655766BFCD89CA3996AB9E
+          2BCDEDCCB3CADB90379CEF9FFFED12C212E192B6A5864B572D1D58E6BDAC6A39
+          B23C7179DB0AE315052B865606AC3CB88AB62A6DD54FABED5797AE7EBD267A4D
+          6B815EC1CA82C1B5016BEB0B550AE5857DEBDCD7ED5D4F582F59DFB561FA869D
+          1B3E15898AAE14DB1797157FD828DC78E51B876FCABF99DC94B4A9ABC4B964CF
+          66D266E9E6DE2D9E5B0E96AA97E6970E6E0DD9DAB40DDF56B4EDF5F645DB2F97
+          CD28DBBB83B643B9A3BF3CB8BC65A7C9CECD3B3F54A454F454FA5436EED2DDB5
+          61D7F86ED1EE1B7BBCF634ECD5DB5BBCF7FD3EC9BEDB5501554DD566D565FB49
+          FBB3F73FAE89AAE9F896FB6D5DAD4E6D71EDC703D203FD07230EB6D7B9D4D51D
+          D23D54528FD62BEB470EC71FBEFE9DEF772D0D360D558D9CC6E223704479E4E9
+          F709DFF71E0D3ADA768C7BACE107D31F761D671D2F6A429AF29A469B539AFB5B
+          625BBA4FCC3ED1D6EADE7AFC47DB1F0F9C343C59794AF354C969DAE982D39367
+          F2CF8C9D959D7D7E2EF9DC60DBA2B67BE763CEDF6A0F6FEFBA1074E1D245FF8B
+          E73BBC3BCE5CF2B874F2B2DBE51357B8579AAF3A5F6DEA74EA3CFE93D34FC7BB
+          9CBB9AAEB95C6BB9EE7ABDB57B66F7E91B9E37CEDDF4BD79F116FFD6D59E393D
+          DDBDF37A6FF7C5F7F5DF16DD7E7227FDCECBBBD97727EEADBC4FBC5FF440ED41
+          D943DD87D53F5BFEDCD8EFDC7F6AC077A0F3D1DC47F7068583CFFE91F58F0F43
+          058F998FCB860D86EB9E383E3939E23F72FDE9FCA743CF64CF269E17FEA2FECB
+          AE17162F7EF8D5EBD7CED198D1A197F29793BF6D7CA5FDEAC0EB19AFDBC6C2C6
+          1EBEC97833315EF456FBEDC177DC771DEFA3DF0F4FE47C207F28FF68F9B1F553
+          D0A7FB93199393FF040398F3FC63332DDB000000464944415478DAB5CF310E00
+          20080340D177F2397D27C141895870B41BCDA509A4AAE5CA68AB60215FD3050D
+          591C3E1011E00859EC4EA05F43B8F10FD86BFE0424C26C31858F4C69673BDC9B
+          FEEECA0000000049454E44AE426082}
+        Name = 'PngImage2'
+        Background = clWindow
+      end
+      item
+        PngImage.Data = {
+          89504E470D0A1A0A0000000D494844520000000A0000000A08060000008D32CF
+          BD000000097048597300000B1300000B1301009A9C1800000A4F694343505068
+          6F746F73686F70204943432070726F66696C65000078DA9D53675453E9163DF7
+          DEF4424B8880944B6F5215082052428B801491262A2109104A8821A1D91551C1
+          114545041BC8A088038E8E808C15512C0C8A0AD807E421A28E83A3888ACAFBE1
+          7BA36BD6BCF7E6CDFEB5D73EE7ACF39DB3CF07C0080C9648335135800CA9421E
+          11E083C7C4C6E1E42E40810A2470001008B3642173FD230100F87E3C3C2B22C0
+          07BE000178D30B0800C04D9BC0301C87FF0FEA42995C01808401C07491384B08
+          801400407A8E42A600404601809D98265300A0040060CB6362E300502D006027
+          7FE6D300809DF8997B01005B94211501A09100201365884400683B00ACCF568A
+          450058300014664BC43900D82D00304957664800B0B700C0CE100BB200080C00
+          305188852900047B0060C8232378008499001446F2573CF12BAE10E72A000078
+          99B23CB9243945815B082D710757572E1E28CE49172B14366102619A402EC279
+          99193281340FE0F3CC0000A0911511E083F3FD78CE0EAECECE368EB60E5F2DEA
+          BF06FF226262E3FEE5CFAB70400000E1747ED1FE2C2FB31A803B06806DFEA225
+          EE04685E0BA075F78B66B20F40B500A0E9DA57F370F87E3C3C45A190B9D9D9E5
+          E4E4D84AC4425B61CA577DFE67C25FC057FD6CF97E3CFCF7F5E0BEE22481325D
+          814704F8E0C2CCF44CA51CCF92098462DCE68F47FCB70BFFFC1DD322C44962B9
+          582A14E35112718E449A8CF332A52289429229C525D2FF64E2DF2CFB033EDF35
+          00B06A3E017B912DA85D6303F64B27105874C0E2F70000F2BB6FC1D428080380
+          6883E1CF77FFEF3FFD47A02500806649927100005E44242E54CAB33FC7080000
+          44A0812AB0411BF4C1182CC0061CC105DCC10BFC6036844224C4C24210420A64
+          801C726029AC82422886CDB01D2A602FD4401D34C051688693700E2EC255B80E
+          3D700FFA61089EC128BC81090441C808136121DA8801628A58238E08179985F8
+          21C14804128B2420C9881451224B91354831528A542055481DF23D720239875C
+          46BA913BC8003282FC86BC47319481B2513DD40CB543B9A8371A8446A20BD064
+          74319A8F16A09BD072B41A3D8C36A1E7D0AB680FDA8F3E43C730C0E8180733C4
+          6C302EC6C342B1382C099363CBB122AC0CABC61AB056AC03BB89F563CFB17704
+          128145C0093604774220611E4148584C584ED848A8201C243411DA0937090384
+          51C2272293A84BB426BA11F9C4186232318758482C23D6128F132F107B8843C4
+          37241289433227B9900249B1A454D212D246D26E5223E92CA99B34481A2393C9
+          DA646BB20739942C202BC885E49DE4C3E433E41BE421F25B0A9D624071A4F853
+          E22852CA6A4A19E510E534E5066598324155A39A52DDA8A15411358F5A42ADA1
+          B652AF5187A81334759A39CD8316494BA5ADA295D31A681768F769AFE874BA11
+          DD951E4E97D057D2CBE947E897E803F4770C0D861583C7886728199B18071867
+          197718AF984CA619D38B19C754303731EB98E7990F996F55582AB62A7C1591CA
+          0A954A9526951B2A2F54A9AAA6AADEAA0B55F355CB548FA95E537DAE46553353
+          E3A909D496AB55AA9D50EB531B5367A93BA887AA67A86F543FA47E59FD890659
+          C34CC34F43A451A0B15FE3BCC6200B6319B3782C216B0DAB86758135C426B1CD
+          D97C762ABB98FD1DBB8B3DAAA9A13943334A3357B352F394663F07E39871F89C
+          744E09E728A797F37E8ADE14EF29E2291BA6344CB931655C6BAA96979658AB48
+          AB51AB47EBBD36AEEDA79DA6BD45BB59FB810E41C74A275C2747678FCE059DE7
+          53D953DDA70AA7164D3D3AF5AE2EAA6BA51BA1BB4477BF6EA7EE989EBE5E809E
+          4C6FA7DE79BDE7FA1C7D2FFD54FD6DFAA7F5470C5806B30C2406DB0CCE183CC5
+          35716F3C1D2FC7DBF151435DC34043A561956197E18491B9D13CA3D5468D460F
+          8C69C65CE324E36DC66DC6A326062621264B4DEA4DEE9A524DB9A629A63B4C3B
+          4CC7CDCCCDA2CDD699359B3D31D732E79BE79BD79BDFB7605A785A2CB6A8B6B8
+          6549B2E45AA659EEB6BC6E855A3959A558555A5DB346AD9DAD25D6BBADBBA711
+          A7B94E934EAB9ED667C3B0F1B6C9B6A9B719B0E5D806DBAEB66DB67D61676217
+          67B7C5AEC3EE93BD937DBA7D8DFD3D070D87D90EAB1D5A1D7E73B472143A563A
+          DE9ACE9CEE3F7DC5F496E92F6758CF10CFD833E3B613CB29C4699D539BD34767
+          1767B97383F3888B894B82CB2E973E2E9B1BC6DDC8BDE44A74F5715DE17AD2F5
+          9D9BB39BC2EDA8DBAFEE36EE69EE87DC9FCC349F299E593373D0C3C843E051E5
+          D13F0B9F95306BDFAC7E4F434F8167B5E7232F632F9157ADD7B0B7A577AAF761
+          EF173EF63E729FE33EE33C37DE32DE595FCC37C0B7C8B7CB4FC36F9E5F85DF43
+          7F23FF64FF7AFFD100A78025016703898141815B02FBF87A7C21BF8E3F3ADB65
+          F6B2D9ED418CA0B94115418F82AD82E5C1AD2168C8EC90AD21F7E798CE91CE69
+          0E85507EE8D6D00761E6618BC37E0C2785878557863F8E7088581AD131973577
+          D1DC4373DF44FA449644DE9B67314F39AF2D4A352A3EAA2E6A3CDA37BA34BA3F
+          C62E6659CCD5589D58496C4B1C392E2AAE366E6CBEDFFCEDF387E29DE20BE37B
+          17982FC85D7079A1CEC2F485A716A92E122C3A96404C884E3894F041102AA816
+          8C25F21377258E0A79C21DC267222FD136D188D8435C2A1E4EF2482A4D7A92EC
+          91BC357924C533A52CE5B98427A990BC4C0D4CDD9B3A9E169A76206D323D3ABD
+          31839291907142AA214D93B667EA67E66676CBAC6585B2FEC56E8BB72F1E9507
+          C96BB390AC05592D0AB642A6E8545A28D72A07B267655766BFCD89CA3996AB9E
+          2BCDEDCCB3CADB90379CEF9FFFED12C212E192B6A5864B572D1D58E6BDAC6A39
+          B23C7179DB0AE315052B865606AC3CB88AB62A6DD54FABED5797AE7EBD267A4D
+          6B815EC1CA82C1B5016BEB0B550AE5857DEBDCD7ED5D4F582F59DFB561FA869D
+          1B3E15898AAE14DB1797157FD828DC78E51B876FCABF99DC94B4A9ABC4B964CF
+          66D266E9E6DE2D9E5B0E96AA97E6970E6E0DD9DAB40DDF56B4EDF5F645DB2F97
+          CD28DBBB83B643B9A3BF3CB8BC65A7C9CECD3B3F54A454F454FA5436EED2DDB5
+          61D7F86ED1EE1B7BBCF634ECD5DB5BBCF7FD3EC9BEDB5501554DD566D565FB49
+          FBB3F73FAE89AAE9F896FB6D5DAD4E6D71EDC703D203FD07230EB6D7B9D4D51D
+          D23D54528FD62BEB470EC71FBEFE9DEF772D0D360D558D9CC6E223704479E4E9
+          F709DFF71E0D3ADA768C7BACE107D31F761D671D2F6A429AF29A469B539AFB5B
+          625BBA4FCC3ED1D6EADE7AFC47DB1F0F9C343C59794AF354C969DAE982D39367
+          F2CF8C9D959D7D7E2EF9DC60DBA2B67BE763CEDF6A0F6FEFBA1074E1D245FF8B
+          E73BBC3BCE5CF2B874F2B2DBE51357B8579AAF3A5F6DEA74EA3CFE93D34FC7BB
+          9CBB9AAEB95C6BB9EE7ABDB57B66F7E91B9E37CEDDF4BD79F116FFD6D59E393D
+          DDBDF37A6FF7C5F7F5DF16DD7E7227FDCECBBBD97727EEADBC4FBC5FF440ED41
+          D943DD87D53F5BFEDCD8EFDC7F6AC077A0F3D1DC47F7068583CFFE91F58F0F43
+          058F998FCB860D86EB9E383E3939E23F72FDE9FCA743CF64CF269E17FEA2FECB
+          AE17162F7EF8D5EBD7CED198D1A197F29793BF6D7CA5FDEAC0EB19AFDBC6C2C6
+          1EBEC97833315EF456FBEDC177DC771DEFA3DF0F4FE47C207F28FF68F9B1F553
+          D0A7FB93199393FF040398F3FC63332DDB000000314944415478DA63FCFFFF3F
+          C33E4ECEFF0C7880D3F7EF8C8C7B3938F02A82011A2A04BA03AB02A0FBC95438
+          009E2136C001F8182265056B655A0000000049454E44AE426082}
+        Name = 'PngImage3'
+        Background = clWindow
+      end>
+    Left = 1040
+    Top = 104
+    Bitmap = {}
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 816
+    Top = 104
+    object miConfigAdd: TMenuItem
+      Caption = #28155#21152#37197#32622
+      OnClick = miConfigAddClick
+    end
+    object miConfigEdit: TMenuItem
+      Caption = #20462#25913#37197#32622
+      OnClick = miConfigEditClick
+    end
+    object miConfigDelete: TMenuItem
+      Caption = #21024#38500#37197#32622
+      OnClick = miConfigDeleteClick
+    end
+  end
+end
